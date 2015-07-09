@@ -1,0 +1,16 @@
+<%=link_to("<<Back",users_path,:class => 'back_link')%>
+
+<h2>User Detail</h2>
+
+<table class="listing">
+	<tr >
+	<th>Name</th>
+	<td ><%= @user.name %></td>
+	</tr>
+	<tr>
+	<th>Email</th>
+	<td ><%= @user.email %></td>
+	</tr>
+</table>
+
+

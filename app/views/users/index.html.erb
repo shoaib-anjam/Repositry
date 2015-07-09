@@ -1,0 +1,21 @@
+<h2>Stroies</h2>
+
+<table class="listing">
+	<tr class="header">
+	<th>Name</th>
+	<th>Email</th>
+	<th>Actions</th>
+	</tr>
+	<% @users.each do |user|%>
+	<tr>
+		<td ><%= user.name %></td>
+		<td ><%= user.email %></td>
+		<td class="actions">
+			<%=link_to("show",user_path(user),class: 'action show')%>
+			<%=link_to("edit",edit_user_path(user),class: 'action edit')%>
+			<%= link_to "Delete", user, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</td>
+	</tr>
+	<% end %>
+	<%=link_to("Add User", new_user_path,:class => 'action insert')%>
+</table>

@@ -1,0 +1,11 @@
+<%if object && object.errors.size>0%>
+<div class="errorExp">
+<h2><%=pluralize(object.errors.size,"errors")%> Prohibited this record from being saved.</h2>
+<p> There is problem with following fields:</p>
+<ul>
+<% object.errors.full_messages.each do |m|%>
+<li><%=m%></li>
+<%end%>
+</ul>
+</div>
+<%end%>

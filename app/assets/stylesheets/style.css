@@ -1,0 +1,60 @@
+body {
+ background-color: #666;
+ margin: 15px 25px;
+ text-align: center;
+ vertical-align: center;
+ font-family: Helvetica, Arial, sans-serif;
+}
+.mid{
+	width:100%;
+	text-align: center;
+	vertical-align: middle;
+}
+#content {
+ background-color: #fff;
+ border: 10px solid #ccc;
+ width: 50%;
+ text-align: center;
+ vertical-align: middle;
+ padding: 10px 10px 20px 10px;
+} 
+#notification {
+ border: 5px solid #9c9;
+ background-color: #cfc;
+ padding: 5px;
+ margin: 10px 0;
+} 
+.new_story table{
+	text-align: center;
+	vertical-align: center;
+	overflow:hidden;
+	margin: 0 auto;
+}
+.listing{
+	margin: 0 auto;
+	text-align: center;
+}
+.field_with_errors {
+ border: 5px solid #f66;
+} 
+.field_with_errors label{
+ color #f66;
+} 
+table, th, td {
+   border: 1px solid black;
+}
+td{
+	min-width: 100px;
+}
+
+.errorExp{
+	border:2px solid red;
+
+}
+.errorExp h2{
+	background-color: #DF0101
+}
+.errorExp li{
+
+	color: #DF0101
+}

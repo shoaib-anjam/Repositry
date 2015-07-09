@@ -1,0 +1,16 @@
+<%=link_to("<<Back",users_path,:class => 'back_link')%>
+
+<h2> Create user</h2>
+<div  class="new_story">
+<%= form_for(:user,:url=>users_path) do |f| %>
+
+<%= render(:partial => "form", :locals => {:f=>f})%>
+
+ <div class="form-buttons">
+ <%= submit_tag("Create user")%>
+ </div>
+ 
+
+<% end %>
+</div>
+

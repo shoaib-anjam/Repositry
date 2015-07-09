@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Users</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="mid">
+	<div id="content">
+	 	<h1>Users</h1>
+	 	<% unless flash[:notice].blank? %>
+			<div id="notification"><%= flash[:notice] %></div>
+		<% end %>
+		<div class="data">
+			<%= yield %>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+<%=link_to("<<Back",users_path,:class => 'back_link')%>
+
+<h2> Update Story</h2>
+<div  class="new_story">
+<%= form_for(:user,:url=>user_path(@user.to_param ),:html=>{:method=>:put}) do |f| %>
+
+	<%= render(:partial => "form", :locals => {:f=>f})%>
+
+ <div class="form-buttons">
+ <%= submit_tag("Update user")%>
+ </div>
+ 
+
+<% end %>
+</div>
